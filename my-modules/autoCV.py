@@ -1,7 +1,6 @@
 """
 `Github: <https://github.com/ajinzrathod/>`
 +--------------------------------+
-| Reshapes image using cv2       |
 | Make sure ``cv2`` is installed |
 +--------------------------------+
 
@@ -11,8 +10,8 @@ Import Module::
 
 
 `Resize Image`
-Resize Image -> ars.resizeImg(img, width, height)
--------------------------------------------------
+Resize Image: ars.resizeImg(img, width, height)
+-----------------------------------------------
 Resize image with default Ratio::
 
   >>> img = autoCV.resizeImg(img)
@@ -23,8 +22,8 @@ Resize image with custom Ratio::
 
 
 `Auto Canny Edges`
-Find Edges using Canny -> autoCV.autoCanny(img, sigma)
-------------------------------------------------------
+Find Edges using Canny: autoCV.autoCanny(img, sigma)
+----------------------------------------------------
 Find Edges::
 
   >>> img = autoCV.autoCanny(img)
@@ -32,6 +31,24 @@ Find Edges::
 Resize image with Sigma::
 
   >>> img = autoCV.resizeImg(img, sigma)
+
+
+`Find And Draw Contours`
+Find And Draw Contours: findAndDrawContours(edgedImg,
+                                             originalImg
+                                             color=(255, 255, 255
+                                             thickness=2
+                                             area=500):
+-------------------------------------------------------
+Drawing Contours::
+
+  >>> img = autoCV.findAndDrawContours(edgedImg, originalImg)
+
+Drawing Contours with custom settings::
+
+  >>> img = autoCV.findAndDrawContours(edgedImg, originalImg,
+                                      color, thickness, area)
+
 """
 
 try:
@@ -88,7 +105,7 @@ def autoCanny(image, sigma=0.33):
     |   @brief: Finds edges of Image
     |
     |
-    |   Paramters Explained
+    |   Parameters Explained
     |   -------------------
     |   @param(1) image: inputs a image
     |   @param(2) sigma value (optional) [Default: 0.33]
@@ -123,12 +140,12 @@ def findAndDrawContours(edgedImg,
                         originalImg,
                         color=(255, 255, 255),
                         thickness=2,
-                        area = 500) -> Contour Img
+                        area = 500) -> Contours of Img
 
     |   @brief: Draws Contours in Original Image and return Contours
     |
     |
-    |   Paramters Explained
+    |   Parameters Explained
     |   -------------------
     |   @param(1): edgedImg
     |           Inputs a Edged image
