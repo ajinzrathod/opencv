@@ -1,20 +1,26 @@
-import numpy as np
 import cv2 as cv
 import autoCV
 
 
-path = ("../resources/shapes.png")
+path = ("../resources/smarties.png")
 
-originalImg = cv.imread(path)
-originalImg = autoCV.resizeImg(originalImg, 720, 480)
+realImg = cv.imread(path)
 
-img = cv.cvtColor(originalImg, cv.COLOR_BGR2GRAY)
+img = cv.cvtColor(realImg, cv.COLOR_BGR2GRAY)
 
-img = cv.GaussianBlur(img, (3, 3), cv.BORDER_REPLICATE)
+img = cv.GaussianBlur(img, (5, 5), cv.BORDER_REPLICATE)
 
 img = autoCV.autoCanny(img)
 
-contours = autoCV.findAndDrawContours(img, originalImg, (255, 255, 255), 3, 1000)
+minArea = 50
 
-cv.imshow("Image", contourImg)
+# contours = autoCV.findAndDrawContours(img, realImg, (255, 255, 255), 3, minArea)
+
+contours, _ = cv.findContours(img, 0, 1)
+
+autoCV.detectObject.drawShapes(contours, realImg, (255, 255, 255), 2, minArea, True)
+
+realImg = autoCV.resizeImg(realImg, 540, 480)
+
+cv.imshow("Image2", realImg)
 cv.waitKey(0)
