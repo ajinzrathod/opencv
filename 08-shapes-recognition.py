@@ -10,33 +10,33 @@ def getContours(img):
         area = cv2.contourArea(cnt)
         cv2.drawContours(imgContour, cnt, -1, (0, 255, 255), 3)
 
-        # if area > 500:
-        #     peri = cv2.arcLength(cnt, True)  # True for Closed Shapes
-        #     approx = cv2.approxPolyDP(cnt, 0.02 * peri, True)
-        #     print(len(approx))
-        #     objCorners = len(approx)
-        #     x, y, width, height = cv2.boundingRect(approx)
-        #     cv2.rectangle(imgContour, (x, y), (x + width, y + height), (255, 0, 0), 2)
+        if area > 500:
+            peri = cv2.arcLength(cnt, True)  # True for Closed Shapes
+            approx = cv2.approxPolyDP(cnt, 0.02 * peri, True)
+            print(len(approx))
+            objCorners = len(approx)
+            x, y, width, height = cv2.boundingRect(approx)
+            cv2.rectangle(imgContour, (x, y), (x + width, y + height), (255, 0, 0), 2)
 
-        #     if objCorners == 3:
-        #         objectType = "Triangle"
-        #     elif objCorners == 4:
-        #         aspRatio = width / float(height)
+            if objCorners == 3:
+                objectType = "Triangle"
+            elif objCorners == 4:
+                aspRatio = width / float(height)
 
-        #         if aspRatio > 0.80 and aspRatio < 1.20:
-        #             objectType = "Square"
-        #         else:
-        #             objectType = "Rectangle"
+                if aspRatio > 0.80 and aspRatio < 1.20:
+                    objectType = "Square"
+                else:
+                    objectType = "Rectangle"
 
-        #     elif objCorners == 5:
-        #         objectType = "Penta"
-        #     elif objCorners > 5:
-        #         objectType = "Circle"
-        #     else:
-        #         objectType = "None"
-        #     cv2.putText(imgContour, objectType,
-        #                 (x, y + 15), cv2.FONT_HERSHEY_COMPLEX, 0.7,
-        #                 (255, 255, 255), 2)
+            elif objCorners == 5:
+                objectType = "Penta"
+            elif objCorners > 5:
+                objectType = "Circle"
+            else:
+                objectType = "None"
+            cv2.putText(imgContour, objectType,
+                        (x, y + 15), cv2.FONT_HERSHEY_COMPLEX, 0.7,
+                        (255, 255, 255), 2)
 
 
 path = 'resources/shapes.png'

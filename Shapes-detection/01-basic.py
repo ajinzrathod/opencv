@@ -18,7 +18,7 @@ minArea = 50
 
 contours, _ = cv.findContours(img, 0, 1)
 
-autoCV.detectObject.drawShapes(contours, realImg, (255, 255, 255), 2, minArea, True)
+autoCV.detectObject.drawShapes(contours, realImg, (255, 0, 255), 2, minArea, True)
 
 realImg = autoCV.resizeImg(realImg, 540, 480)
 
