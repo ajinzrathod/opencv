@@ -1,0 +1,227 @@
+(opencv) ajinzrathod@ajinz:~/Documents/project-of-opencv-venv$ sudo apt-get install python3.7.5-dev
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package python3.7.5-dev
+E: Couldn't find any package by glob 'python3.7.5-dev'
+E: Couldn't find any package by regex 'python3.7.5-dev'
+(opencv) ajinzrathod@ajinz:~/Documents/project-of-opencv-venv$ sudo apt-get install python3.7-dev
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  apturl-common gir1.2-geocodeglib-1.0 gir1.2-snapd-1 gnome-software-common libegl1-mesa libfwup1 libgtkspell0 libjemalloc1
+  libllvm8 libllvm9 python-bs4 python-html5lib python-lxml python-scour python-webencodings python3-dateutil
+  python3-software-properties scour ubuntu-web-launchers unattended-upgrades
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libpython3.7 libpython3.7-dev
+The following NEW packages will be installed:
+  libpython3.7 libpython3.7-dev python3.7-dev
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 50.4 MB of archives.
+After this operation, 89.0 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 libpython3.7 amd64 3.7.5-2~18.04 [1,498 kB]
+Get:2 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 libpython3.7-dev amd64 3.7.5-2~18.04 [48.4 MB]
+Get:3 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 python3.7-dev amd64 3.7.5-2~18.04 [514 kB]                
+Fetched 50.4 MB in 17s (2,965 kB/s)                                                                                            
+Selecting previously unselected package libpython3.7:amd64.
+(Reading database ... 292815 files and directories currently installed.)
+Preparing to unpack .../libpython3.7_3.7.5-2~18.04_amd64.deb ...
+Unpacking libpython3.7:amd64 (3.7.5-2~18.04) ...
+Selecting previously unselected package libpython3.7-dev:amd64.
+Preparing to unpack .../libpython3.7-dev_3.7.5-2~18.04_amd64.deb ...
+Unpacking libpython3.7-dev:amd64 (3.7.5-2~18.04) ...
+Selecting previously unselected package python3.7-dev.
+Preparing to unpack .../python3.7-dev_3.7.5-2~18.04_amd64.deb ...
+Unpacking python3.7-dev (3.7.5-2~18.04) ...
+Setting up libpython3.7:amd64 (3.7.5-2~18.04) ...
+Setting up libpython3.7-dev:amd64 (3.7.5-2~18.04) ...
+Setting up python3.7-dev (3.7.5-2~18.04) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1.2) ...
+(opencv) ajinzrathod@ajinz:~/Documents/project-of-opencv-venv$ pip install dlib
+Collecting dlib
+  Using cached dlib-19.21.0.tar.gz (3.2 MB)
+Building wheels for collected packages: dlib
+  Building wheel for dlib (setup.py) ... done
+  Created wheel for dlib: filename=dlib-19.21.0-cp37-cp37m-linux_x86_64.whl size=4001852 sha256=eeae79bf8d363f4c3bbae61c306600d6ae4d9de044d5588b6177fd47a067d17b
+  Stored in directory: /home/ajinzrathod/.cache/pip/wheels/d8/8f/ac/70af71fd636fb03b238ca3f183e64f5dfdb5e4ffffeff89ce6
+Successfully built dlib
+Installing collected packages: dlib
+Successfully installed dlib-19.21.0
+(opencv) ajinzrathod@ajinz:~/Documents/project-of-opencv-venv$ sudo apt-get update
+Hit:1 http://dl.google.com/linux/chrome/deb stable InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease                                                                        
+Hit:3 http://packages.microsoft.com/repos/vscode stable InRelease                                                              
+Hit:4 http://ppa.launchpad.net/inkscape.dev/stable/ubuntu bionic InRelease                                                     
+Get:5 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]                                                      
+Hit:6 https://repo.skype.com/deb stable InRelease                                                                              
+Hit:7 http://ppa.launchpad.net/neovim-ppa/stable/ubuntu bionic InRelease                                                       
+Hit:8 http://linux.teamviewer.com/deb stable InRelease                                                                         
+Hit:9 http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu bionic InRelease                                             
+Get:10 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]                  
+Hit:11 https://download.sublimetext.com apt/stable/ InRelease                                                                  
+Hit:12 http://ppa.launchpad.net/wseverin/ppa/ubuntu bionic InRelease                                                           
+Get:13 http://archive.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Get:14 http://archive.ubuntu.com/ubuntu bionic-updates/main i386 Packages [723 kB]
+Get:15 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [1,032 kB]
+Get:16 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 DEP-11 Metadata [295 kB]
+Get:17 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1,097 kB]
+Get:18 http://archive.ubuntu.com/ubuntu bionic-updates/universe i386 Packages [1,027 kB]
+Get:19 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 DEP-11 Metadata [279 kB]
+Get:20 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 DEP-11 Metadata [2,468 B]
+Get:21 http://archive.ubuntu.com/ubuntu bionic-backports/universe amd64 DEP-11 Metadata [9,288 B]
+Get:22 http://archive.ubuntu.com/ubuntu bionic-security/main amd64 DEP-11 Metadata [46.1 kB]
+Get:23 http://archive.ubuntu.com/ubuntu bionic-security/universe amd64 DEP-11 Metadata [49.2 kB]
+Get:24 http://archive.ubuntu.com/ubuntu bionic-security/multiverse amd64 DEP-11 Metadata [2,464 B]
+Fetched 4,815 kB in 4s (1,231 kB/s)                                
+Reading package lists... Done
+W: Target Packages (universe/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Packages (universe/binary-i386/Packages) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Packages (universe/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Translations (universe/i18n/Translation-en_IN) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Translations (universe/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target DEP-11 (universe/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target DEP-11 (universe/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target DEP-11-icons-small (universe/dep11/icons-48x48.tar) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target DEP-11-icons (universe/dep11/icons-64x64.tar) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target CNF (universe/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target CNF (universe/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target Translations (main/i18n/Translation-en_IN) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target DEP-11 (main/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target DEP-11 (main/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target DEP-11-icons-small (main/dep11/icons-48x48.tar) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target DEP-11-icons (main/dep11/icons-64x64.tar) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target CNF (main/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target CNF (main/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target Packages (universe/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Packages (universe/binary-i386/Packages) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Packages (universe/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Translations (universe/i18n/Translation-en_IN) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Translations (universe/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target DEP-11 (universe/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target DEP-11 (universe/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target DEP-11-icons-small (universe/dep11/icons-48x48.tar) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target DEP-11-icons (universe/dep11/icons-64x64.tar) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target CNF (universe/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target CNF (universe/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target Translations (main/i18n/Translation-en_IN) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target DEP-11 (main/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target DEP-11 (main/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target DEP-11-icons-small (main/dep11/icons-48x48.tar) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target DEP-11-icons (main/dep11/icons-64x64.tar) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target CNF (main/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target CNF (main/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+(opencv) ajinzrathod@ajinz:~/Documents/project-of-opencv-venv$ sudo apt-get install libboost-all-dev
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+libboost-all-dev is already the newest version (1.65.1.0ubuntu1).
+The following packages were automatically installed and are no longer required:
+  apturl-common gir1.2-geocodeglib-1.0 gir1.2-snapd-1 gnome-software-common libegl1-mesa libfwup1 libgtkspell0 libjemalloc1
+  libllvm8 libllvm9 python-bs4 python-html5lib python-lxml python-scour python-webencodings python3-dateutil
+  python3-software-properties scour ubuntu-web-launchers unattended-upgrades
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+(opencv) ajinzrathod@ajinz:~/Documents/project-of-opencv-venv$ sudo apt-get update
+Hit:1 http://linux.teamviewer.com/deb stable InRelease
+Hit:2 http://dl.google.com/linux/chrome/deb stable InRelease                                                                   
+Hit:3 http://packages.microsoft.com/repos/vscode stable InRelease                                                              
+Hit:4 http://ppa.launchpad.net/inkscape.dev/stable/ubuntu bionic InRelease                                                     
+Hit:5 http://archive.ubuntu.com/ubuntu bionic InRelease                                                                        
+Hit:6 http://archive.ubuntu.com/ubuntu bionic-updates InRelease                                                                
+Hit:7 https://repo.skype.com/deb stable InRelease                                                                              
+Hit:8 http://archive.ubuntu.com/ubuntu bionic-backports InRelease                                                              
+Hit:9 http://ppa.launchpad.net/neovim-ppa/stable/ubuntu bionic InRelease                                                       
+Hit:10 http://archive.ubuntu.com/ubuntu bionic-security InRelease                                                              
+Hit:11 http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu bionic InRelease                                            
+Hit:12 https://download.sublimetext.com apt/stable/ InRelease                                       
+Hit:13 http://ppa.launchpad.net/wseverin/ppa/ubuntu bionic InRelease                                
+Reading package lists... Done                                
+W: Target Packages (universe/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Packages (universe/binary-i386/Packages) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Packages (universe/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Translations (universe/i18n/Translation-en_IN) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Translations (universe/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target DEP-11 (universe/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target DEP-11 (universe/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target DEP-11-icons-small (universe/dep11/icons-48x48.tar) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target DEP-11-icons (universe/dep11/icons-64x64.tar) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target CNF (universe/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target CNF (universe/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target Translations (main/i18n/Translation-en_IN) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target DEP-11 (main/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target DEP-11 (main/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target DEP-11-icons-small (main/dep11/icons-48x48.tar) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target DEP-11-icons (main/dep11/icons-64x64.tar) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target CNF (main/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target CNF (main/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target Packages (universe/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Packages (universe/binary-i386/Packages) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Packages (universe/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Translations (universe/i18n/Translation-en_IN) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Translations (universe/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target DEP-11 (universe/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target DEP-11 (universe/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target DEP-11-icons-small (universe/dep11/icons-48x48.tar) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target DEP-11-icons (universe/dep11/icons-64x64.tar) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target CNF (universe/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target CNF (universe/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:52
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target Translations (main/i18n/Translation-en_IN) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target DEP-11 (main/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target DEP-11 (main/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target DEP-11-icons-small (main/dep11/icons-48x48.tar) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target DEP-11-icons (main/dep11/icons-64x64.tar) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target CNF (main/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+W: Target CNF (main/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/skype-stable.list:1 and /etc/apt/sources.list.d/skypeforlinux.list:1
+(opencv) ajinzrathod@ajinz:~/Documents/project-of-opencv-venv$ sudo apt-get install cmake
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+cmake is already the newest version (3.10.2-1ubuntu2.18.04.1).
+The following packages were automatically installed and are no longer required:
+  apturl-common gir1.2-geocodeglib-1.0 gir1.2-snapd-1 gnome-software-common libegl1-mesa libfwup1 libgtkspell0 libjemalloc1
+  libllvm8 libllvm9 python-bs4 python-html5lib python-lxml python-scour python-webencodings python3-dateutil
+  python3-software-properties scour ubuntu-web-launchers unattended-upgrades
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+(opencv) ajinzrathod@ajinz:~/Documents/project-of-opencv-venv$ sudo pip3 install dlib
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+^Z
+[2]+  Stopped                 sudo pip3 install dlib
+(opencv) ajinzrathod@ajinz:~/Documents/project-of-opencv-venv$ sudo pip install dlib
+The directory '/home/ajinzrathod/.cache/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+The directory '/home/ajinzrathod/.cache/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting dlib
+  Downloading https://files.pythonhosted.org/packages/a4/7b/2f7f29f460629a8143b2deea1911e2fb1d9d88d29bf645ba321461588e88/dlib-19.21.0.tar.gz (3.2MB)
+    100% |████████████████████████████████| 3.2MB 124kB/s 
+Installing collected packages: dlib
+  Running setup.py install for dlib ... done
+Successfully installed dlib-19.21.0
+(opencv) ajinzrathod@ajinz:~/Documents/project-of-opencv-venv$ pip install face-recognition
+Collecting face-recognition
+  Using cached face_recognition-1.3.0-py2.py3-none-any.whl (15 kB)
+Requirement already satisfied: Click>=6.0 in /home/ajinzrathod/Documents/opencv/lib/python3.7/site-packages (from face-recognition) (7.1.2)
+Requirement already satisfied: dlib>=19.7 in /home/ajinzrathod/Documents/opencv/lib/python3.7/site-packages (from face-recognition) (19.21.0)
+Requirement already satisfied: face-recognition-models>=0.3.0 in /home/ajinzrathod/Documents/opencv/lib/python3.7/site-packages (from face-recognition) (0.3.0)
+Requirement already satisfied: numpy in /home/ajinzrathod/Documents/opencv/lib/python3.7/site-packages (from face-recognition) (1.19.0)
+Requirement already satisfied: Pillow in /home/ajinzrathod/Documents/opencv/lib/python3.7/site-packages (from face-recognition) (7.1.2)
+Installing collected packages: face-recognition
+Successfully installed face-recognition-1.3.0
+(opencv) ajinzrathod@ajinz:~/Documents/project-of-opencv-venv$ 
